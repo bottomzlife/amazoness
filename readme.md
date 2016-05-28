@@ -53,7 +53,7 @@ Or you can see it in browser's URL bar also.
 Choose a method which you prefer:
 
 * Search `Amazoness` at [Plugins] -> [Install] in WordPress menu, then click [Install] and [Enable]
-* Or, download ZIP archived file and drop into the page at [Plugins] -> [Install] -> [Upload] in WordPress menu, then click [Install] and [Enable]
+* Or, [download ZIP archived file](https://github.com/bottomzlife/amazoness/releases) and drop into the page at [Plugins] -> [Install] -> [Upload] in WordPress menu, then click [Install] and [Enable]
 
 ## Environment
 
