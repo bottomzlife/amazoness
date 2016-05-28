@@ -1,4 +1,4 @@
-# Amazoness
+# [Amazoness](https://github.com/bottomzlife/amazoness/)
 
 AmazonアソシエイトHTMLタグをかんたんに出力するショートコードを実装するWordPressプラグイン
 
@@ -163,7 +163,7 @@ Amazonessが表示する商品紹介ブロックのためのHTML定義です。
 * 設定を変更したら Amazoness の動作がおかしくなってしまった…
     * 設定画面の [設定を元に戻す] ボタンをクリックすると、設定が元通りになります
 * バグを見つけた！
-    * ありがとうございます。GitHub などでご連絡ください 
+    * ありがとうございます。[GitHub Issues Board](https://github.com/bottomzlife/amazoness/issues) などでご連絡ください 
 
 ## 開発者について、寄付・著作権
 
@@ -181,8 +181,10 @@ Amazonessが表示する商品紹介ブロックのためのHTML定義です。
 ## Contact
 
 開発者のメールアドレスは、特段の事情がない限り SPAM 避けのためのダミーです。
+以下でコンタクトをとってください：
 
-* [GitHub repository](http://)
+* [GitHub Issue Board](https://github.com/bottomzlife/amazoness/issues)
+* [GitHub Repository](https://github.com/bottomzlife/amazoness/)
 
 ## History
 

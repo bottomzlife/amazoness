@@ -1,4 +1,4 @@
-# Amazoness
+# [Amazoness](https://github.com/bottomzlife/amazoness/)
 
 A WordPress plugin which provides shortcodes for Amazon Associates tags.
 
@@ -150,7 +150,7 @@ Filters work like this:
 * Amazoness got insane after I made changes in configuration page
     * Click `Reset Configuration` button to reset your configuration
 * I have just found some bugs
-    * Contact me via GitHub or any other ways 
+    * Contact me via [GitHub Issues Board](https://github.com/bottomzlife/amazoness/issues) or any other ways 
 
 ## Author, Donation & Copyright
 
@@ -166,8 +166,10 @@ But I am very poor. Thank you for kindness if would give me any donation.
 ## Contact
 
 All of my mail addresses are dummies for avoiding abuse.
+Contact via these ways:
 
-* [GitHub repository](http://)
+* [GitHub Issue Board](https://github.com/bottomzlife/amazoness/issues)
+* [GitHub Repository](https://github.com/bottomzlife/amazoness/)
 
 ## History
 
