@@ -1,3 +1,5 @@
+[にほんごはこちら](https://github.com/bottomzlife/amazoness/blob/master/readme.ja.md)
+
 # [Amazoness](https://github.com/bottomzlife/amazoness/)
 
 A WordPress plugin which provides shortcodes for Amazon Associates tags.
