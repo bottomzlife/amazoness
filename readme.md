@@ -1,4 +1,4 @@
-[にほんごはこちら](https://github.com/bottomzlife/amazoness/blob/master/readme.ja.md)
+[→にほんごはこちら](https://github.com/bottomzlife/amazoness/blob/master/readme.ja.md)
 
 # [Amazoness](https://github.com/bottomzlife/amazoness/)
 
@@ -8,6 +8,12 @@ A WordPress plugin which provides shortcodes for Amazon Associates tags.
 
 In posting blog article pages (or any other shortcode-enabled context),
 type like this:
+
+````
+Blah blah blah [asin asin="4063827216"] blah blah blah.
+````
+
+or
 
 ````
 Blah blah blah [asin]4063827216[/asin] blah blah blah.
@@ -21,16 +27,28 @@ shows you:
 >  *:*   
 >blah blah blah.
 
+`4063827216` is a typical example of Amazon's product unique code,
+i.e. ASIN.
+
 Or you can use Amazon's full URL for products instead of pure ASIN.
 Amazoness captures ASIN from the URL like this:
 
 ````
+[asin asin="http://www.amazon.co.jp/exec/obidos/ASIN/4063827747"]
 [asin]http://www.amazon.co.jp/dp/4063827747[/asin]
-[asin]http://www.amazon.co.jp/exec/obidos/ASIN/4063827747[/asin]
 ````
 
 But this capturing feature does not work properly always.
 You'd better use pure ASINs.
+
+The difference between
+`[asin asin="ASIN"]`
+and
+`[asin]ASIN[/asin]`
+is that
+latter one's ASIN code is displayed in HTML source
+so crawlers (e.g. Googlebot) catch some noises.
+Former one is better, I think.
 
 ## Unique Point
 
@@ -41,6 +59,7 @@ You'd better use pure ASINs.
     * Users can fully customize how it can be seen by CSS and HTML
     * Uses cache for fetching product data, so speedy  
 * Demerits
+    * The product's price and other informations are not supported
     * Crawls Amazon pages without any permissions ;-( I expect they were tender people...
     * Not suitable for people who don't know what ASIN is
 
@@ -55,6 +74,8 @@ Or you can see it in browser's URL bar also.
 Choose a method which you prefer:
 
 * Search `Amazoness` at [Plugins] -> [Install] in WordPress menu, then click [Install] and [Enable]
+    * Sorry as of June 2016 this plugin has not yet registered to 
+      WordPress's Plugin registory. Try next method
 * Or, [download ZIP archived file](https://github.com/bottomzlife/amazoness/releases) and drop into the page at [Plugins] -> [Install] -> [Upload] in WordPress menu, then click [Install] and [Enable]
 
 ## Environment
@@ -165,9 +186,12 @@ But I am very poor. Thank you for kindness if would give me any donation.
 * [bottomzlife's Amazon wishlist](http://www.amazon.co.jp/registry/wishlist/35RWBK7ZZQ8PF/ref=cm_sw_r_tw_ws_z.arxbD4ZYFG5)
 * [bottomzlife's Amazon associate link](http://www.amazon.co.jp/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=netspin-22)
 
+I will keep this plugin under the dual license of GPL and MIT.
+Settle it after leared much about WordPress's license rule.
+
 ## Contact
 
-All of my mail addresses are dummies for avoiding abuse.
+All of my public mail addresses are dummies for avoiding abuse.
 Contact via these ways:
 
 * [GitHub Issue Board](https://github.com/bottomzlife/amazoness/issues)

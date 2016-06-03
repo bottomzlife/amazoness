@@ -1,9 +1,9 @@
 <?php
 /*
     Plugin Name: Amazoness
-    Plugin URI: http://netsp.in/
+    Plugin URI: https://github.com/bottomzlife/amazoness/
     Description: A WordPress plugin that provides shortcodes for Amazon Associates tags
-    Version: 0.9.1
+    Version: 0.9.5
     Author: bottomzlife
     Author URI: http://netsp.in/
     License: GPL2

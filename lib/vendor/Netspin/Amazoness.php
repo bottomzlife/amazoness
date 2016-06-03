@@ -1,5 +1,4 @@
 <?php
-// ToDo: 日本語MD追加
 
 namespace Netspin;
 
@@ -78,6 +77,7 @@ _EOF_;
     float: left;
 }
 .amazoness dt img {
+    width: 100% !important;
     text-decoration: none;
     box-shadow: .2em .2em .2em rgba(0,0,0,0.4);
         -moz-box-shadow: .2em .2em .2em rgba(0,0,0,0.4);
@@ -95,6 +95,7 @@ _EOF_;
 }
 .amazoness dd ul {
     margin: 0;
+    padding: 0;
 }
 .amazoness dd ul li {
     margin: 0;
@@ -110,6 +111,11 @@ _EOF_;
     line-height: 1.2;
     filter: saturate(0%);
         -webkit-filter: saturate(0%);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
 }
 .amazoness dl:after {
     clear: both;

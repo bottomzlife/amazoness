@@ -8,12 +8,16 @@ AmazonアソシエイトHTMLタグをかんたんに出力するショートコ�
 `[asin]` というショートコードを使用します：
 
 ````
+ほげ ほげ ほげ  [asin asin="4063827216"] ほげ ほげ ほげ。
+````
+
+または：
+
+````
 ほげ ほげ ほげ  [asin]4063827216[/asin] ほげ ほげ ほげ。
 ````
 
-`4063827216` は、Amazon の各商品に一意に割り付けられているコード＝ASINです。
-
-結果は：
+の結果は：
 
 >ほげ ほげ ほげ  
 >  *:*  
@@ -23,16 +27,23 @@ AmazonアソシエイトHTMLタグをかんたんに出力するショートコ�
 
 のように表示されます。
 
-または、Amazonの各商品ページのURLを貼ると、Amazoness が自動的にそこから
+`4063827216` は、Amazon の各商品に一意に割り付けられているコード＝ASINです。
+
+
+また、Amazonの各商品ページのURLを貼ると、Amazoness が自動的にそこから
 ASINを抽出して動作します：
 
 ````
+[asin asin="http://www.amazon.co.jp/exec/obidos/ASIN/4063827747"]
 [asin]http://www.amazon.co.jp/dp/4063827747[/asin]
-[asin]http://www.amazon.co.jp/exec/obidos/ASIN/4063827747[/asin]
 ````
 
 ただし、あらゆるURL形式に対してうまく動くとは限りません。
 基本的には前者の「ASINだけを指定する」ほうを利用してください。
+
+`[asin asin="ASIN"]` 形式と `[asin]ASIN[/asin]` 形式の違いは、 
+後者では ASIN がHTML中に出力されGoogleなどのクローラーにノイズ
+として取得されてしまうことです。前者を使うのが好ましいでしょう。
 
 ## 長所・短所
 
@@ -43,6 +54,7 @@ ASINを抽出して動作します：
     * 商品紹介の部分の見た目は、CSS・HTMLを使って自由にカスタマイズできる
     * 商品情報の取得にキャッシュを使用しているので動作がスピーディ  
 * 短所
+    * 価格などの表示には対応していません
     * クロールするためにAmazonの特別な了解を得ているわけではない。
       たぶん、おめこぼししてもらえる程度の使い方ですが…
     * ASINがわからない人には向いていない
@@ -59,6 +71,8 @@ Amazonの商品ページに行くと「ASIN」という項目があるので確�
 * WordPress 管理画面メニューから [プラグイン] -> [インストール] をたどり、
   [検索] 欄に `Amazoness` と入れてプラグインを探してください。
   見つかったら「インストール」をクリックし、「有効化」をおこなってください
+    * WordPressプラグインには2016年6月現在まだ登録されていないので、
+      こちらはできないかもしれません
 * ZIPファイルを [Amazoness 公式サイト](https://github.com/bottomzlife/amazoness/releases)からダウンロードし、
   WordPress管理画面メニューの [プラグイン] -> [インストール] -> [アップロード] を選びます。
   ドラッグ＆ドロップで Amazoness のZIPファイルをアップロードしたら、
@@ -175,12 +189,17 @@ Amazonessが表示する商品紹介ブロックのためのHTML定義です。
 ただし…開発者は非常に貧乏なので、気が向いたら「Amazonほしいものリスト」
 などで寄付をいただけると死ぬほど喜びます。
 
-* [bottomzlife's Amazon wishlist](http://www.amazon.co.jp/registry/wishlist/35RWBK7ZZQ8PF/ref=cm_sw_r_tw_ws_z.arxbD4ZYFG5)
-* [bottomzlife's Amazon associate link](http://www.amazon.co.jp/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=netspin-22)
+* [作者のAmazonほしいものリスト](http://www.amazon.co.jp/registry/wishlist/35RWBK7ZZQ8PF/ref=cm_sw_r_tw_ws_z.arxbD4ZYFG5)
+* [作者のAmazonリンク](http://www.amazon.co.jp/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=netspin-22)
+
+ライセンスは GPL と MIT のデュアルライセンスを検討中ですが、
+WordPressの規定がどうなっているのか
+よくわからないので未定です。
 
 ## Contact
 
-開発者のメールアドレスは、特段の事情がない限り SPAM 避けのためのダミーです。
+公開されている開発者のメールアドレスは、
+特段の事情がない限り SPAM 避けのためのダミーです。
 以下でコンタクトをとってください：
 
 * [GitHub Issue Board](https://github.com/bottomzlife/amazoness/issues)
